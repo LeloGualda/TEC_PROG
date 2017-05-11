@@ -7,6 +7,7 @@
 
 
 
+ int ordenar_selecao_nome();
  
 
 void main (void)
@@ -20,13 +21,14 @@ void main (void)
 	
 //******************* declarando meus construtores 
 
-	int qntAulunos = 10;
-	char nomes[qntAulunos][50];
-	int idades[qntAulunos][50];
-	int i; //loop
+	//int qntAulunos = 10;
+	//char nomes[qntAulunos][50];
+	//int idades[qntAulunos][50];
+	//int i; //loop
 	
 //****************** Inicio da funcao
-	
+	 ordenar_selecao_nome();
+	 /*
 	for (i = 0; i<qntAulunos;i++)
 	{
 		printf("\n Digite o nome do aluno: \n");
@@ -35,33 +37,14 @@ void main (void)
 		scanf("%d",&idades[i]); 
 		
 	}
+	*/
 	
-	
-	
-	
-
 }
-
-
 
 
 int ordenar_selecao_nome() 
 {
-    int i,j,indmin;
-    string min, aux;
-    for(i=0; i< (tam-1); i++) {
-        strcpy(min,vetor[i]);
-        indmin = i;
-        for(j=i+1; j<tam; j++) {
-            if(strcmp(vetor[j],min)<0)
-                strcpy(min,vetor[j]);
-                indmin = j;
-        }
-        if(strcmp(vetor[i], min)>0) {
-            strcpy(aux, vetor[i]);
-            strcpy(vetor[i], vetor[indmin]);
-            strcpy(vetor[indmin], aux);
-        }
-    }
+    
 	return(0);
 }
+	
